@@ -110,7 +110,8 @@ internal struct BottomSheetView<hContent: View, mContent: View, bottomSheetPosit
                                         ScrollView {
                                             self.mainContent
                                         }
-                                        .disabled(!self.isTopPosition)
+                                        // Enable selection even when not on the top position
+                                        // .disabled(!self.isTopPosition)
                                     } else {
                                         self.mainContent
                                     }
